@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open YouTube</title>
+</head>
+<body>
+  <button id="open-youtube">Open YouTube</button>
+
+  <script>
+    const openYoutube = () => {
+      const tabs = document.querySelectorAll(".youtube");
+      for (let i = 0; i < tabs.length; i++) {
+        const tab = tabs[i];
+        const url = "https://youtube.com";
+        window.open(url, "_blank");
+      }
+    };
+
+    document.getElementById("open-youtube").addEventListener("click", openYoutube);
+  </script>
+
+  <div class="youtube">
+  </div>
+
+  <div class="youtube">
+  </div>
+
+  <div class="youtube">
+  </div>
+
+  ...
+
+  <div class="youtube">
+  </div>
+</body>
+</html>
